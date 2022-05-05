@@ -22,3 +22,43 @@ Space Complexity
 - It's expressed using Big O notation
 
 What makes one solution better than another? Complexity
+
+Memory
+- The bedrock of all data Structures
+- Memory is the underlying concept that you absolutely need to understand
+
+bit - shirt of binary digit - fundamental unit in CS that represents a state with one of two values (0 and 1) - any data stored in a computer is represented in bits
+
+Byte - group of 8 bits. EX: 01101000 is a Byte
+- A single byte can represent up to 256 data valyes (2^8)
+- Since a binary number is a number expressed with only two symbols, like 0 and 1, a byte can effectively represent all of the numbers between 0 and 255, inclusive, in binary format
+EX:
+# 1 : 00000001
+# 2 : 00000010
+# 3 : 00000011
+# 4 : 00000100
+
+Fixed-Width Integer - an integer represented by a fixed amount of bits. EX: 32-bit integer represented by 32 bits (4) bytes, and a 64 bit integer (8 bytes)
+- constant number of bits
+
+Memory - foundational layer of computing, where all data is stored.
+- data stored in memory is stored in bytes and bits
+- Bytes in memory can "point" to other bytes in memory, so as to store reference to other data.
+- The amount of memory that a machine has is bounded, making it valuable to limit how much memory an algorithm takes up.
+- Accessing  byte or a fixed number of bytes (like 4 bytes or 8 bytes in the case of 32-but and 64-but integers) is an elementary operation, which can be loosely treated asa single unit of operational work. 
+
+two sum
+function twoNumberSum(array, targetSum) {
+	for (i = 0; i < array.length; i++) {
+		const firstNum = array[i]
+		for (j=i+1; j< array.length; j++){
+			const secNum = array[j]
+			if (firstNum + secNum === targetSum){
+				return [firstNum, secNum]
+			}
+		}
+	}
+	return [];
+}
+exports.twoNumberSum = twoNumberSum;
+
