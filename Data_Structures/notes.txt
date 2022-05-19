@@ -87,3 +87,20 @@ var containsDuplicate = function(nums) {
 		#pushing nums into has
 		#check hash for nums
 };
+
+Validate subsequence
+Given two non-empty arrays of integers, write a function that determines whether the second array is a subsequence of the first one.
+sample input:
+array = [5, 1, 22, 25, 6, -1, 8,10]
+sequence = [1, 6, -1, 10]
+same output: true
+
+function isValidSubsequence(array, sequence) {
+	let arrIdx = 0;
+	let seqIdx = 0;
+	while (arrIdx < array.length && seqIdx < seuqnece.length) {
+		if (array[arrIdx] === seuqnece[seqIdx]) seqIdx++;
+		arrIdx;
+	}
+	return seqIdx === sequence.length;
+}
