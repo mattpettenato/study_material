@@ -1,0 +1,9 @@
+logarithm
+
+- mathematical concept that's widely used in Computer Science and that's defined by the following equation:
+
+logb(x) = y if and only if b^y = x
+
+logarithmic time complexity of (O(log(n)))
+n is size of input
+when n doubles, # of operations needed to be completed increases by 1 unit. 
