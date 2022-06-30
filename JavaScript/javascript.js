@@ -8,3 +8,4 @@
 // With Ajax, web applications can send and retrieve data from a server asynchronously without interfering with the display and behaviour of the existing page.
 
 // - allows website to communicate with server asynchronously
+
